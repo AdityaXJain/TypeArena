@@ -141,7 +141,7 @@ export default function TypingTest() {
                 Click below  to start typing 👇
               </Button>
 
-              <div className="relative  min-h-[200px] w-full rounded-lg border bg-background p-4 font-mono text-2xl">
+              <div className="relative  min-h-[200px] w-full rounded-lg bg-background p-4 font-mono text-2xl">
                 <div
                   className="absolute inset-0 p-4  pointer-events-none whitespace-pre-wrap break-words leading-relaxed tracking-wide"
                   style={{ wordSpacing: "0.25em" }}
@@ -166,7 +166,7 @@ export default function TypingTest() {
                 <textarea
                   value={typedText}
                   onChange={handleTyping}
-                  className="relative min-h-[200px]  h-full w-full text-transparent caret-black dark:caret-white  resize-none bg-transparent p-0 font-inherit leading-relaxed tracking-wide focus:outline-none focus:ring-0"
+                  className="relative min-h-[200px]  h-full w-full text-transparent caret-black resize-none bg-transparent p-0 font-inherit leading-relaxed tracking-wide focus:outline-none focus:ring-0"
                   style={{ wordSpacing: "0.25em" }}
                   placeholder=""
                   disabled={!isTestRunning}
